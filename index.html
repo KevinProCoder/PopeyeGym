@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi - POPEYE GYM</title>
+    <!-- Font Gahar -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Black+Ops+One&display=swap">
+    
+    <style>
+        body { 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #0a0a0a; 
+            color: #eeeeee; 
+            font-family: 'Oswald', sans-serif;
+            margin: 0; 
+        }
+
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+            background: #ffcc00; 
+            border-bottom: 5px solid #000000;
+        }
+
+        nav h2 { 
+            color: #000000; 
+            margin: 0; 
+            font-family: 'Black Ops One', cursive; 
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        .container { 
+            padding: 60px 20px; 
+            text-align: center; 
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .promo-header {
+            margin-bottom: 50px;
+        }
+
+        .promo-header h1 {
+            font-size: 3.5em;
+            color: #ffcc00;
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .promo-header p {
+            font-size: 1.2em;
+            letter-spacing: 4px;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .pricing-wrapper { 
+            display: flex; 
+            justify-content: center; 
+            gap: 25px; 
+            flex-wrap: wrap; 
+        }
+
+        .price-card { 
+            background: rgba(17, 17, 17, 0.9); 
+            border: 2px solid #333;
+            padding: 40px 30px; 
+            width: 240px; 
+            transition: all 0.4s ease;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-card:hover { 
+            transform: scale(1.05); 
+            border-color: #ffcc00; 
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.3);
+        }
+
+        /* Label Populer */
+        .featured-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ffcc00;
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .price-card h3 { 
+            margin: 0; 
+            color: #ffcc00; 
+            font-size: 1.8em; 
+            text-transform: uppercase;
+        }
+
+        .price-card .amount {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .price-card .amount span {
+            font-size: 0.4em;
+            color: #888;
+        }
+
+        .price-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 30px 0;
+            text-align: left;
+            color: #bbb;
+        }
+
+        .price-card ul li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 5px;
+        }
+
+        .price-card ul li::before {
+            content: "✓ ";
+            color: #ffcc00;
+        }
+
+        .btn-join {
+            background: #ffcc00; 
+            color: #000; 
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-join:hover {
+            background: #fff;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            margin-top: 80px; 
+            padding: 40px; 
+            background: #000;
+            color: #666; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>POPEYE GYM</h2>
+    </nav>
+
+    <div class="container">
+        <div class="promo-header">
+            <h1>CHOOSE YOUR POWER</h1>
+            <p>EAT YOUR SPINACH, LIFT THE IRON</p>
+            <div style="width: 100px; height: 5px; background: #ffcc00; margin: 20px auto;"></div>
+        </div>
+
+        <div class="pricing-wrapper">
+            <!-- Paket 1 -->
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <span class="amount">150K <span>/ Bln</span></span>
+                <ul>
+                    <li>Akses Full 24/7</li>
+                    <li>Locker & Shower</li>
+                    <li>Free WiFi</li>
+                </ul>
+                <a href="#" class="btn-join">Join Now</a>
+            </div>
+
+            <!-- Paket 2 (Featured) -->
+            <div class="price-card" style="border-color: #ffcc00;">
+                <div class="featured-label">BEST SELLER</div>
+                <h3>3 Months</h3>
+                <span class="amount">400K <span>/ 3 Bln</span></span>
+                <ul>
+                    <li>Semua Fitur Monthly</li>
+                    <li>Free Konsultasi Alat</li>
+                    <li>Starter Kit Bag</li>
+                </ul>
+                <a href="#" class="btn-join">Join Now</a>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="price-card">
+                <h3>6 Months</h3>
+                <span class="amount">750K <span>/ 6 Bln</span></span>
+                <ul>
+                    <li>Semua Fitur 3 Bln</li>
+                    <li>Free Guest Pass (2x)</li>
+                    <li>Suplemen Starter</li>
+                </ul>
+                <a href="#" class="btn-join">Join Now</a>
+            </div>
+
+            <!-- Paket 4 -->
+            <div class="price-card">
+                <h3>Yearly</h3>
+                <span class="amount">1.2M <span>/ Thn</span></span>
+                <ul>
+                    <li>Akses VIP Selamanya</li>
+                    <li>T-Shirt Exclusive</li>
+                    <li>2x Personal Trainer</li>
+                </ul>
+                <a href="#" class="btn-join">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="color: #ffcc00; font-weight: bold; margin-bottom: 5px;">POPEYE GYM &copy; 2026</p>
+        <p>THE INDUSTRIAL SECTOR, POWER CITY | POWERED BY RUSDI BROS</p>
+    </footer>
+
+</body>
+</html>
